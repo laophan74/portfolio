@@ -1,144 +1,85 @@
-const logotext = "JOHN";
+const logotext = "LAO PHAN";
 const meta = {
-    title: "John Doe",
-    description: "I’m John Doe data scientist _ Full stack devloper,currently working in Berlin",
+    title: "Lao Phan",
+    description: "I'm Lao Phan - A passionate software developer with strong foundation in web technologies, backend development, and database management",
 };
 
 const introdata = {
-    title: "I’m John Doe",
+    title: "I'm Lao Phan",
     animated: {
         first: "I love coding",
-        second: "I code cool websites",
-        third: "I develop mobile apps",
+        second: "I develop web applications",
+        third: "I build scalable backend systems",
     },
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum",
+    description: "I am a passionate and dedicated software developer with a strong foundation in web technologies, backend development, and database management.",
     your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
 };
 
 const dataabout = {
-    title: "abit about my self",
-    aboutme: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis dolor id ligula semper elementum feugiat pretium nulla. Nunc non commodo dolor. Nunc mollis dignissim facilisis. Morbi ut magna ultricies.",
+    title: "About Me",
+    aboutme: "I am a passionate and dedicated software developer with a strong foundation in web technologies, backend development, and database management. I have experience working as a Backend NodeJS Intern at ITR VN and hold a Bachelor's degree in Software Engineering. Currently, I am pursuing a Master's degree in Information and Communications Technology at Western Sydney University. I am always eager to learn, innovate, and collaborate on challenging projects that drive technological growth.",
 };
 const worktimeline = [{
-        jobtitle: "Designer of week",
-        where: "YAdfi",
-        date: "2020",
-    },
-    {
-        jobtitle: "Designer of week",
-        where: "Jamalya",
-        date: "2019",
-    },
-    {
-        jobtitle: "Designer of week",
-        where: "ALquds",
-        date: "2019",
+        jobtitle: "Backend NodeJS Intern",
+        where: "ITR VN",
+        date: "Sep 2022 - Dec 2022",
     },
 ];
 
-const skills = [{
-        name: "Python",
+const skills = [
+    {
+        name: "HTML / CSS / Javascript / ReactJS / NextJS",
         value: 90,
     },
     {
-        name: "Djano",
-        value: 85,
-    },
-    {
-        name: "Javascript",
+        name: "Java / Swift / React Native",
         value: 80,
     },
     {
-        name: "React",
-        value: 60,
+        name: "SQL / MongoDB / FireBase",
+        value: 85,
     },
     {
-        name: "Jquery",
+        name: "NodeJS / ExpressJS / GraphQL",
         value: 85,
     },
 ];
 
 const services = [{
-        title: "UI & UX Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        title: "Web Development",
+        description: "Building scalable and responsive web applications using modern technologies like ReactJS, NextJS, and backend frameworks.",
     },
     {
         title: "Mobile Apps",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        description: "Developing cross-platform and native mobile applications using Java, Swift, and React Native.",
     },
     {
-        title: "Wordpress Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        title: "Backend Development",
+        description: "Designing and implementing robust backend systems using NodeJS, ExpressJS, and various databases.",
     },
 ];
 
 const dataportfolio = [{
         img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
+        description: "VnReader - News Reading Platform (HTML / CSS / Javascript / ReactJS / ExpressJS / MongoDB / RESTful API) - A news reading platform using ReactJS for the frontend and ExpressJS for the backend, designed to provide users with real-time access to breaking news, articles, and media content.",
         link: "#",
     },
     {
         img: "https://picsum.photos/400/800/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
+        description: "Shorts - A Video Sharing Platform (HTML / CSS / Javascript / ReactJS / Supabase / Cloud storage) - A video sharing platform where users can upload, view, and share short video clips.",
         link: "#",
     },
     {
         img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/600/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/300/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/700/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-
-    {
-        img: "https://picsum.photos/400/600/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/300/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/550/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/700/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
+        description: "CoachTicket - Online Ticket Booking App (Android Studio / Java / FireBase) - An Android mobile application that allows users to book bus tickets for their journeys.",
         link: "#",
     },
 ];
 
 const contactConfig = {
-    YOUR_EMAIL: "name@domain.com",
-    YOUR_FONE: "(555)123-4567",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar, nisi at imperdiet pharetra. ",
+    YOUR_EMAIL: "laophan74@gmail.com",
+    YOUR_FONE: "+61 412 358 005",
+    description: "Feel free to reach out to me. I'm always happy to discuss new projects, creative ideas, or opportunities to be part of your visions.",
     // creat an emailjs.com account 
     // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
     YOUR_SERVICE_ID: "service_id",
@@ -147,11 +88,24 @@ const contactConfig = {
 };
 
 const socialprofils = {
-    github: "https://github.com",
+    github: "https://github.com/laophan74",
     facebook: "https://facebook.com",
     linkedin: "https://linkedin.com",
     twitter: "https://twitter.com",
 };
+
+const education = [
+    {
+        title: "Bachelor of Software Engineering",
+        school: "University of Information Technology",
+        date: "2019 - 2023",
+    },
+    {
+        title: "Master of Information and Communications Technology",
+        school: "Western Sydney University",
+        date: "2024 - 2026",
+    },
+];
 export {
     meta,
     dataabout,
@@ -163,4 +117,5 @@ export {
     contactConfig,
     socialprofils,
     logotext,
+    education,
 };
