@@ -105,7 +105,9 @@ const contactConfig = {
 };
 
 const socialprofils = {
+    facebook: "https://fb.com/laophan74",
     github: "https://github.com/laophan74",
+    linkedin: "https://www.linkedin.com/in/leonphan74/",
 };
 
 const education = [
