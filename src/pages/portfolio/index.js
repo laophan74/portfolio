@@ -7,7 +7,7 @@ import { dataportfolio, meta } from "../../content_option";
 export const Portfolio = () => {
   return (
     <HelmetProvider>
-      <Container className="About-header">
+      <Container id="projects" className="About-header page_section">
         <Helmet>
           <meta charSet="utf-8" />
           <title> Projects | {meta.title} </title>{" "}
@@ -25,6 +25,7 @@ export const Portfolio = () => {
               <div key={i} className="po_item">
                 <img src={data.img} alt="" />
                 <div className="content">
+                  <h2>{data.title}</h2>
                   <p>{data.description}</p>
                   <a href={data.link}>view project</a>
                 </div>

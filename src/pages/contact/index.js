@@ -8,7 +8,7 @@ import { contactConfig } from "../../content_option";
 export const ContactUs = () => {
   return (
     <HelmetProvider>
-      <Container>
+      <Container id="contact" className="page_section">
         <Helmet>
           <meta charSet="utf-8" />
           <title>{meta.title} | Contact</title>
@@ -33,6 +33,26 @@ export const ContactUs = () => {
               {contactConfig.hasOwnProperty("YOUR_FONE") ? (
                 <p>
                   <strong>Phone:</strong> {contactConfig.YOUR_FONE}
+                </p>
+              ) : (
+                ""
+              )}
+              {contactConfig.hasOwnProperty("YOUR_WEBSITE") ? (
+                <p>
+                  <strong>Portfolio:</strong>{" "}
+                  <a href={contactConfig.YOUR_WEBSITE}>
+                    {contactConfig.YOUR_WEBSITE}
+                  </a>
+                </p>
+              ) : (
+                ""
+              )}
+              {contactConfig.hasOwnProperty("YOUR_GITHUB") ? (
+                <p>
+                  <strong>GitHub:</strong>{" "}
+                  <a href={contactConfig.YOUR_GITHUB}>
+                    github.com/laophan74
+                  </a>
                 </p>
               ) : (
                 ""

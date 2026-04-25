@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./style.css";
 import { VscGrabber, VscClose } from "react-icons/vsc";
-import { Link } from "react-router-dom";
 import { logotext ,socialprofils } from "../content_option";
 import Themetoggle from "../components/themetoggle";
 
@@ -9,10 +8,10 @@ const Headermain = () => {
   const [isActive, setActive] = useState(true);
 
   const navigationItems = [
-    { label: "Home", path: "/" },
-    { label: "Projects", path: "/portfolio" },
-    { label: "About", path: "/about" },
-    { label: "Contact", path: "/contact" },
+    { label: "Home", path: "#home" },
+    { label: "About", path: "#about" },
+    { label: "Projects", path: "#projects" },
+    { label: "Contact", path: "#contact" },
   ];
 
   const handleToggle = () => {
@@ -30,14 +29,14 @@ const Headermain = () => {
       <header className="fixed-top site__header">
         <div className="d-flex align-items-center justify-content-between">
           <div className="d-flex align-items-center">
-            <Link  className="navbar-brand nav_ac" to="/">
+            <a className="navbar-brand nav_ac" href="#home">
               {logotext}
-            </Link>
+            </a>
             <nav className="desktop__navigation" aria-label="Primary navigation">
               {navigationItems.map((item) => (
-                <Link key={item.path} to={item.path}>
+                <a key={item.path} href={item.path}>
                   {item.label}
-                </Link>
+                </a>
               ))}
             </nav>
           </div>
@@ -57,9 +56,9 @@ const Headermain = () => {
                 <ul className="the_menu">
                   {navigationItems.map((item) => (
                     <li key={item.path} className="menu_item">
-                      <Link onClick={closeMenu} to={item.path} className="my-3">
+                      <a onClick={closeMenu} href={item.path} className="my-3">
                         {item.label}
-                      </Link>
+                      </a>
                     </li>
                   ))}
                 </ul>
@@ -68,9 +67,11 @@ const Headermain = () => {
           </div>
           <div className="menu_footer d-flex flex-column flex-md-row justify-content-between align-items-md-center position-absolute w-100 p-3">
             <div className="d-flex">
-            <a href={socialprofils.facebook}>Facebook</a>
-            <a href={socialprofils.github}>Github</a>
-            <a href={socialprofils.linkedin}>LinkedIn</a>
+              {Object.entries(socialprofils).map(([platform, url]) => (
+                <a key={platform} href={url}>
+                  {platform.charAt(0).toUpperCase() + platform.slice(1)}
+                </a>
+              ))}
             </div>
             <p className="copyright m-0">copyright __ {logotext}</p>
           </div>

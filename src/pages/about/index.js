@@ -8,12 +8,13 @@ import {
   worktimeline,
   skills,
   services,
+  education,
 } from "../../content_option";
 
 export const About = () => {
   return (
     <HelmetProvider>
-      <Container className="About-header">
+      <Container id="about" className="About-header page_section">
         <Helmet>
           <meta charSet="utf-8" />
           <title> About | {meta.title}</title>
@@ -37,7 +38,7 @@ export const About = () => {
         </Row>
         <Row className=" sec_sp">
           <Col lg="5">
-            <h3 className="color_sec py-4">Work Timline</h3>
+            <h3 className="color_sec py-4">Experience</h3>
           </Col>
           <Col lg="7">
             <table className="table caption-top">
@@ -46,7 +47,31 @@ export const About = () => {
                   return (
                     <tr key={i}>
                       <th scope="row">{data.jobtitle}</th>
-                      <td>{data.where}</td>
+                      <td>
+                        <strong>{data.where}</strong>
+                        <p className="timeline_meta">{data.technologies}</p>
+                        <p className="timeline_desc">{data.description}</p>
+                      </td>
+                      <td>{data.date}</td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </Col>
+        </Row>
+        <Row className="sec_sp">
+          <Col lg="5">
+            <h3 className="color_sec py-4">Education</h3>
+          </Col>
+          <Col lg="7">
+            <table className="table caption-top">
+              <tbody>
+                {education.map((data, i) => {
+                  return (
+                    <tr key={i}>
+                      <th scope="row">{data.title}</th>
+                      <td>{data.school}</td>
                       <td>{data.date}</td>
                     </tr>
                   );
@@ -61,17 +86,21 @@ export const About = () => {
           </Col>
           <Col lg="7">
             {skills.map((data, i) => {
+              const [category, details] = data.name.split(": ");
               return (
                 <div key={i} className="skill_item">
-                  <h3 className="progress-title">{data.name}</h3>
+                  <h3 className="progress-title">
+                    <strong>{category}</strong>
+                    {details ? `: ${details}` : ""}
+                  </h3>
                 </div>
               );
             })}
           </Col>
         </Row>
         <Row className="sec_sp">
-          <Col lang="5">
-            <h3 className="color_sec py-4">services</h3>
+          <Col lg="5">
+            <h3 className="color_sec py-4">Services</h3>
           </Col>
           <Col lg="7">
             {services.map((data, i) => {

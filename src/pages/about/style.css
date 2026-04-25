@@ -2,9 +2,19 @@
     margin-bottom: calc(3rem + 5.128vw)
 }
 
+.About-header .sec_sp {
+    margin-bottom: calc(1.75rem + 2.75vw);
+}
+
+.About-header .color_sec.py-4 {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+}
+
 .table td,
 .table th {
     color: var(--text-color);
+    vertical-align: top;
 }
 
 .t_border {
@@ -13,13 +23,30 @@
 
 .progress-title {
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 400;
     margin: 0;
     font-family: 'Raleway';
 }
 
+.progress-title strong {
+    font-weight: 700;
+}
+
 .skill_item {
     margin-bottom: 16px;
+}
+
+.timeline_meta {
+    margin: 6px 0;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+.timeline_desc {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.6;
 }
 
 .progress {
