@@ -14,8 +14,12 @@
 .progress-title {
     font-size: 16px;
     font-weight: 700;
-    margin: 15px 0 20px;
+    margin: 0;
     font-family: 'Raleway';
+}
+
+.skill_item {
+    margin-bottom: 16px;
 }
 
 .progress {

@@ -1,85 +1,93 @@
-const logotext = "LAO PHAN";
+import linkedoutLogo from "./assets/images/linkedout-logo.png";
+import xuanayLogo from "./assets/images/xuanay-logo.png";
+
+const logotext = "LEON PHAN";
 const meta = {
-    title: "Lao Phan",
-    description: "I'm Lao Phan - A passionate software developer with strong foundation in web technologies, backend development, and database management",
+    title: "Leon Phan",
+    description: "I'm Leon Phan - A software developer experienced in React, Node.js, Express, MongoDB, WordPress, PHP, and mobile app development.",
 };
 
 const introdata = {
-    title: "I'm Lao Phan",
+    title: "I'm Leon Phan",
     animated: {
-        first: "I love coding",
-        second: "I develop web applications",
-        third: "I build scalable backend systems",
+        first: "I build full-stack web applications",
+        second: "I develop backend APIs",
+        third: "I create smooth user experiences",
     },
-    description: "I am a passionate and dedicated software developer with a strong foundation in web technologies, backend development, and database management.",
+    description: "I am a software developer with experience building full-stack web applications, backend APIs, database-driven systems, and mobile applications.",
     your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
 };
 
 const dataabout = {
     title: "About Me",
-    aboutme: "I am a passionate and dedicated software developer with a strong foundation in web technologies, backend development, and database management. I have experience working as a Backend NodeJS Intern at ITR VN and hold a Bachelor's degree in Software Engineering. Currently, I am pursuing a Master's degree in Information and Communications Technology at Western Sydney University. I am always eager to learn, innovate, and collaborate on challenging projects that drive technological growth.",
+    aboutme: "I am Leon Phan, a software developer focused on full-stack web development, backend systems, and practical user-facing products. I have internship experience at ITR VN: Technology Design and Engineering and Integral Immersive Analytics Lab at Western Sydney University. I hold a Bachelor of Software Engineering from the University of Information Technology and am pursuing a Master of Information and Communications Technology at Western Sydney University.",
 };
 const worktimeline = [{
-        jobtitle: "Backend NodeJS Intern",
-        where: "ITR VN",
-        date: "Sep 2022 - Dec 2022",
+        jobtitle: "Intern",
+        where: "ITR VN: Technology Design and Engineering",
+        date: "Oct 2022 - Dec 2022",
+    },
+    {
+        jobtitle: "Intern",
+        where: "Integral Immersive Analytics Lab, Western Sydney University",
+        date: "Oct 2025 - Dec 2025",
     },
 ];
 
 const skills = [
     {
-        name: "HTML / CSS / Javascript / ReactJS / NextJS",
+        name: "JavaScript / Java / C",
         value: 90,
     },
     {
-        name: "Java / Swift / React Native",
+        name: "React / NextJS / ExpressJS",
+        value: 90,
+    },
+    {
+        name: "MongoDB / SQL / Firebase / Supabase",
+        value: 85,
+    },
+    {
+        name: "WordPress / PHP / Cloudinary",
         value: 80,
-    },
-    {
-        name: "SQL / MongoDB / FireBase",
-        value: 85,
-    },
-    {
-        name: "NodeJS / ExpressJS / GraphQL",
-        value: 85,
     },
 ];
 
 const services = [{
         title: "Web Development",
-        description: "Building scalable and responsive web applications using modern technologies like ReactJS, NextJS, and backend frameworks.",
-    },
-    {
-        title: "Mobile Apps",
-        description: "Developing cross-platform and native mobile applications using Java, Swift, and React Native.",
+        description: "Building responsive full-stack applications with React, NextJS, Node.js, ExpressJS, MongoDB, and modern frontend tools.",
     },
     {
         title: "Backend Development",
-        description: "Designing and implementing robust backend systems using NodeJS, ExpressJS, and various databases.",
+        description: "Designing RESTful APIs, database schemas, authentication flows, media uploads, and reliable server-side features.",
+    },
+    {
+        title: "Mobile Apps",
+        description: "Developing Android applications with Java and Firebase, including booking flows, user management, and smooth navigation.",
     },
 ];
 
 const dataportfolio = [{
-        img: "https://picsum.photos/400/?grayscale",
-        description: "VnReader - News Reading Platform (HTML / CSS / Javascript / ReactJS / ExpressJS / MongoDB / RESTful API) - A news reading platform using ReactJS for the frontend and ExpressJS for the backend, designed to provide users with real-time access to breaking news, articles, and media content.",
-        link: "#",
+        img: linkedoutLogo,
+        description: "LinkedOut Social Media - A full-stack social media application built with React, Redux, Tailwind CSS, Node.js, Express, and MongoDB. Features include chat, posts, comments, likes, profiles, notifications, and Cloudinary media uploads.",
+        link: "https://linkedout-frontend.vercel.app",
     },
     {
-        img: "https://picsum.photos/400/800/?grayscale",
-        description: "Shorts - A Video Sharing Platform (HTML / CSS / Javascript / ReactJS / Supabase / Cloud storage) - A video sharing platform where users can upload, view, and share short video clips.",
-        link: "#",
+        img: xuanayLogo,
+        description: "BanhComXuaNay - A website maintained with WordPress and PHP, with customized pages for showcasing research projects, publications, and dynamically rendered content.",
+        link: "https://banhcomxuanay.com",
     },
     {
         img: "https://picsum.photos/400/?grayscale",
-        description: "CoachTicket - Online Ticket Booking App (Android Studio / Java / FireBase) - An Android mobile application that allows users to book bus tickets for their journeys.",
+        description: "Coach Ticket - Mobile Booking App - An Android coach ticket booking application built with Java and Firebase. Core features include ticket search, booking, user management, UI design, and navigation.",
         link: "#",
     },
 ];
 
 const contactConfig = {
     YOUR_EMAIL: "laophan74@gmail.com",
-    YOUR_FONE: "+61 412 358 005",
-    description: "Feel free to reach out to me. I'm always happy to discuss new projects, creative ideas, or opportunities to be part of your visions.",
+    YOUR_FONE: "0412358005",
+    description: "",
     // creat an emailjs.com account 
     // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
     YOUR_SERVICE_ID: "service_id",
@@ -89,9 +97,8 @@ const contactConfig = {
 
 const socialprofils = {
     github: "https://github.com/laophan74",
-    facebook: "https://facebook.com",
     linkedin: "https://linkedin.com",
-    twitter: "https://twitter.com",
+    facebook: "https://facebook.com",
 };
 
 const education = [
