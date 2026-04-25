@@ -56,6 +56,18 @@ export const Home = () => {
                       <div className="ring three"></div>
                     </div>
                   </Link>
+                  <a
+                    href={`${process.env.PUBLIC_URL}/LeonPhan_Resume.pdf`}
+                    download="LeonPhan_Resume.pdf"
+                    className="text_2"
+                  >
+                    <div id="button_cv" className="ac_btn btn">
+                      Download CV
+                      <div className="ring one"></div>
+                      <div className="ring two"></div>
+                      <div className="ring three"></div>
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>

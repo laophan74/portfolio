@@ -36,7 +36,7 @@ const worktimeline = [{
 
 const skills = [
     {
-        name: "JavaScript / Java / C",
+        name: "JavaScript / Java / C#",
         value: 90,
     },
     {

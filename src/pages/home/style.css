@@ -110,6 +110,16 @@ section {
     margin-right: 20px;
 }
 
+.intro_btn-action {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 0;
+}
+
+.intro_btn-action a {
+    text-decoration: none;
+}
+
 .ac_btn a {
     text-decoration: none;
 }
@@ -171,6 +181,10 @@ section {
 }
 
 #button_h:hover {
+    color: var(--primary-color)
+}
+
+#button_cv:hover {
     color: var(--primary-color)
 }
 
