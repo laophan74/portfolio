@@ -1,5 +1,6 @@
 import linkedoutLogo from "./assets/images/linkedout-logo.png";
 import xuanayLogo from "./assets/images/xuanay-logo.png";
+import coachticketLogo from "./assets/images/coachticket-logo.png";
 
 const logotext = "LEON PHAN";
 const meta = {
@@ -24,17 +25,17 @@ const dataabout = {
 };
 const worktimeline = [{
         jobtitle: "Intern",
+        where: "Integral Immersive Analytics Lab, Western Sydney University",
+        date: "Oct 2025 - Dec 2025",
+        technologies: "React, MUI, Express.js, MongoDB",
+        description: "Developed and maintained the lab website, customized pages for research projects and publications, and integrated backend data with frontend components for dynamic content rendering.",
+    },
+    {
+        jobtitle: "Intern",
         where: "ITR VN: Technology Design and Engineering",
         date: "Oct 2022 - Dec 2022",
         technologies: "React, Express.js, MongoDB",
         description: "Developed a URL shortening web application, designed RESTful APIs, built MongoDB schemas, and tested backend functionality for reliable short URL generation and retrieval.",
-    },
-    {
-        jobtitle: "Intern",
-        where: "Integral Immersive Analytics Lab, Western Sydney University",
-        date: "Oct 2025 - Dec 2025",
-        technologies: "WordPress, MySQL",
-        description: "Developed and maintained the lab website, customized pages for research projects and publications, and integrated backend data with frontend components for dynamic content rendering.",
     },
 ];
 
@@ -53,6 +54,10 @@ const skills = [
     },
     {
         name: "Cloud & Tools: AWS, Cloudinary, Cloud Firestore, WordPress",
+        value: 80,
+    },
+    {
+        name: "AI Tools: Claude, Github Copilot, Codex",
         value: 80,
     },
 ];
@@ -74,6 +79,7 @@ const services = [{
 const dataportfolio = [{
         title: "LinkedOut Social Media",
         img: linkedoutLogo,
+        imgClassName: "po_item_img_cover",
         description: "Individual full-stack social media application built with React, Redux, Tailwind CSS, Node.js, Express.js, and MongoDB. Designed RESTful APIs for posts, comments, and user interactions, integrated Cloudinary media uploads, and deployed the frontend on Vercel.",
         link: "https://linkedout-frontend.vercel.app",
     },
@@ -85,7 +91,8 @@ const dataportfolio = [{
     },
     {
         title: "Coach Ticket Mobile Booking App",
-        img: "https://picsum.photos/400/?grayscale",
+        img: coachticketLogo,
+        imgClassName: "po_item_img_cover",
         description: "Team Android coach ticket booking application built with Java and Firebase. Implemented ticket search, booking, user management, UI design, and navigation for a smooth user experience.",
         link: "#",
     },
