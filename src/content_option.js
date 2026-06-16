@@ -1,6 +1,6 @@
 import linkedoutLogo from "./assets/images/linkedout-logo.png";
 import xuanayLogo from "./assets/images/xuanay-logo.png";
-import coachticketLogo from "./assets/images/coachticket-logo.png";
+import pullsightLogo from "./assets/images/pullsight-logo.svg";
 
 const logotext = "LEON PHAN";
 const meta = {
@@ -20,8 +20,15 @@ const introdata = {
 };
 
 const dataabout = {
-    title: "About Me",
-    aboutme: "I am Leon Phan, a Full-Stack Software Developer with experience building web and mobile applications. My work spans React, Next.js, Node.js, Nest.js, Express.js, MongoDB, Firebase, Supabase, AWS, Cloudinary, WordPress, and MySQL. I have internship experience at ITR VN: Technology Design and Engineering and the Integral Immersive Analytics Lab at Western Sydney University.",
+    title: "Leon Phan",
+    role: "Full-Stack Software Developer",
+    contact: [
+        { label: "Phone", value: "0412358005" },
+        { label: "Email", value: "laophan74@gmail.com" },
+        { label: "Github", value: "github.com/laophan74" },
+        { label: "Portfolio", value: "http://laophan.com" },
+    ],
+    aboutme: "Full-Stack Software Developer experienced in JavaScript, TypeScript, Java, C#, React, Next.js, Node.js, Express.js, MongoDB, Firebase, Supabase, AWS, Cloudinary, and Cloud Firestore. I build responsive web applications, RESTful APIs, database-driven systems, and practical user-facing products.",
 };
 const worktimeline = [{
         jobtitle: "Intern",
@@ -41,7 +48,7 @@ const worktimeline = [{
 
 const skills = [
     {
-        name: "Programming Languages: JavaScript, Java, C#",
+        name: "Programming Languages: JavaScript, TypeScript, Java, C#",
         value: 90,
     },
     {
@@ -90,10 +97,9 @@ const dataportfolio = [{
         link: "http://banhcomxuanay.com",
     },
     {
-        title: "Coach Ticket Mobile Booking App",
-        img: coachticketLogo,
-        imgClassName: "po_item_img_cover",
-        description: "Team Android coach ticket booking application built with Java and Firebase. Implemented ticket search, booking, user management, UI design, and navigation for a smooth user experience.",
+        title: "PullSight",
+        img: pullsightLogo,
+        description: "Full-stack project built to surface pull request insights and make review activity easier to scan. Developed responsive UI flows, API-driven data handling, and clear project summaries for a smoother developer experience.",
         link: "#",
     },
 ];

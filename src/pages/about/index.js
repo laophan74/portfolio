@@ -31,7 +31,16 @@ export const About = () => {
             <h3 className="color_sec py-4">{dataabout.title}</h3>
           </Col>
           <Col lg="7" className="d-flex align-items-center">
-            <div>
+            <div className="resume_intro">
+              <h4>{dataabout.role}</h4>
+              <div className="resume_contact_grid">
+                {dataabout.contact.map((item) => (
+                  <div className="resume_contact_item" key={item.label}>
+                    <span>{item.label}</span>
+                    <strong>{item.value}</strong>
+                  </div>
+                ))}
+              </div>
               <p>{dataabout.aboutme}</p>
             </div>
           </Col>
