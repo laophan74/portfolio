@@ -1,9 +1,14 @@
 <svg width="900" height="900" viewBox="0 0 900 900" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="900" height="900" fill="#111827"/>
-  <circle cx="450" cy="450" r="270" fill="#F8FAFC"/>
-  <path d="M286 452C325 367 386 324 450 324C514 324 575 367 614 452C575 537 514 580 450 580C386 580 325 537 286 452Z" fill="#111827"/>
-  <circle cx="450" cy="452" r="80" fill="#38BDF8"/>
-  <circle cx="450" cy="452" r="38" fill="#F8FAFC"/>
-  <path d="M332 665H568" stroke="#38BDF8" stroke-width="34" stroke-linecap="round"/>
-  <path d="M450 620V700" stroke="#38BDF8" stroke-width="34" stroke-linecap="round"/>
+  <rect width="900" height="900" rx="120" fill="#F8FAFC"/>
+  <rect x="120" y="120" width="660" height="660" rx="96" fill="#101828"/>
+  <circle cx="324" cy="338" r="48" fill="#2DD4BF"/>
+  <circle cx="324" cy="562" r="48" fill="#A3E635"/>
+  <circle cx="576" cy="450" r="58" fill="#38BDF8"/>
+  <path d="M324 386V514" stroke="#F8FAFC" stroke-width="34" stroke-linecap="round"/>
+  <path d="M372 338H458C520 338 576 388 576 450" stroke="#F8FAFC" stroke-width="34" stroke-linecap="round"/>
+  <path d="M508 450H644" stroke="#F8FAFC" stroke-width="34" stroke-linecap="round"/>
+  <path d="M505 396L577 450L505 504" stroke="#F8FAFC" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M254 670H646" stroke="#2DD4BF" stroke-width="28" stroke-linecap="round"/>
+  <text x="450" y="230" text-anchor="middle" fill="#F8FAFC" font-family="Arial, Helvetica, sans-serif" font-size="86" font-weight="800" letter-spacing="0">PullSight</text>
+  <text x="450" y="720" text-anchor="middle" fill="#F8FAFC" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" letter-spacing="0">PR INSIGHTS</text>
 </svg>

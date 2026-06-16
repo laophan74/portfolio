@@ -22,12 +22,6 @@ const introdata = {
 const dataabout = {
     title: "Leon Phan",
     role: "Full-Stack Software Developer",
-    contact: [
-        { label: "Phone", value: "0412358005" },
-        { label: "Email", value: "laophan74@gmail.com" },
-        { label: "Github", value: "github.com/laophan74" },
-        { label: "Portfolio", value: "http://laophan.com" },
-    ],
     aboutme: "Full-Stack Software Developer experienced in JavaScript, TypeScript, Java, C#, React, Next.js, Node.js, Express.js, MongoDB, Firebase, Supabase, AWS, Cloudinary, and Cloud Firestore. I build responsive web applications, RESTful APIs, database-driven systems, and practical user-facing products.",
 };
 const worktimeline = [{
@@ -100,7 +94,7 @@ const dataportfolio = [{
         title: "PullSight",
         img: pullsightLogo,
         description: "Full-stack project built to surface pull request insights and make review activity easier to scan. Developed responsive UI flows, API-driven data handling, and clear project summaries for a smoother developer experience.",
-        link: "#",
+        link: "https://pull-sight.vercel.app/",
     },
 ];
 

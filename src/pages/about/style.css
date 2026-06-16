@@ -62,34 +62,8 @@
 }
 
 .resume_intro p {
-    margin-top: 22px;
+    margin-top: 0;
     line-height: 1.7;
-}
-
-.resume_contact_grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 14px 24px;
-    padding: 18px 0;
-    border-top: 1px solid var(--secondary-color);
-    border-bottom: 1px solid var(--secondary-color);
-}
-
-.resume_contact_item span {
-    display: block;
-    margin-bottom: 4px;
-    font-size: 13px;
-    text-transform: uppercase;
-    color: var(--secondary-color);
-    letter-spacing: 0;
-}
-
-.resume_contact_item strong {
-    display: block;
-    overflow-wrap: anywhere;
-    font-size: 15px;
-    font-weight: 600;
-    color: var(--text-color);
 }
 
 .progress {
@@ -128,12 +102,6 @@
 @keyframes animate-positive {
     0% {
         width: 0%;
-    }
-}
-
-@media (max-width: 575px) {
-    .resume_contact_grid {
-        grid-template-columns: 1fr;
     }
 }
 
